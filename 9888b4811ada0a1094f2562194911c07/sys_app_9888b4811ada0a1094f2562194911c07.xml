@@ -31,15 +31,15 @@
         <sys_created_by>SVenigandla</sys_created_by>
         <sys_created_on>2024-05-19 07:29:48</sys_created_on>
         <sys_id>9888b4811ada0a1094f2562194911c07</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>SVenigandla</sys_updated_by>
-        <sys_updated_on>2024-05-19 07:32:47</sys_updated_on>
+        <sys_updated_on>2024-05-28 15:54:44</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix>sn</vendor_prefix>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </sys_app>
 </record_update>
