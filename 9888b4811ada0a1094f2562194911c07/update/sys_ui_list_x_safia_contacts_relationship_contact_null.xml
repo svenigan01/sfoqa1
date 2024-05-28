@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_safia_contacts_relationship_contact" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_safia_contacts_relationship_contact" element="NULL" name="x_safia_contacts_relationship_contact" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e088b481f6da0a10e821f5f2c773f035</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>SVenigandla</sys_created_by>
+            <sys_created_on>2024-05-19 07:30:00</sys_created_on>
+            <sys_id>ac88b481f9da0a10204507b18ad69f33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SVenigandla</sys_updated_by>
+            <sys_updated_on>2024-05-19 07:30:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contact_name</element>
+            <list_id display_value="x_safia_contacts_relationship_contact" element="NULL" name="x_safia_contacts_relationship_contact" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e088b481f6da0a10e821f5f2c773f035</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>SVenigandla</sys_created_by>
+            <sys_created_on>2024-05-19 07:30:00</sys_created_on>
+            <sys_id>2088b481c1da0a106998f7436f81ff35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SVenigandla</sys_updated_by>
+            <sys_updated_on>2024-05-19 07:30:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>favorite</element>
+            <list_id display_value="x_safia_contacts_relationship_contact" element="NULL" name="x_safia_contacts_relationship_contact" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e088b481f6da0a10e821f5f2c773f035</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>SVenigandla</sys_created_by>
+            <sys_created_on>2024-05-19 07:30:00</sys_created_on>
+            <sys_id>a888b481f9da0a10218cf1e07a3cf334</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SVenigandla</sys_updated_by>
+            <sys_updated_on>2024-05-19 07:30:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_safia_contacts_relationship_contact</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>SVenigandla</sys_created_by>
+            <sys_created_on>2024-05-19 07:30:00</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>e088b481f6da0a10e821f5f2c773f035</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_safia_contacts_relationship_contact</sys_name>
+            <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+            <sys_update_name>sys_ui_list_x_safia_contacts_relationship_contact_null</sys_update_name>
+            <sys_updated_by>SVenigandla</sys_updated_by>
+            <sys_updated_on>2024-05-19 07:30:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>0d88b48171da0a10f085b85b40e754ff</image>
+        <name>x_safia_contacts.team_contact_empty_list.svg</name>
+        <size_bytes>2010</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0188b481fbda0a1011d97b2d8608d0ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_safia_contacts.team_contact_empty_list.svg</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>db_image_0188b481fbda0a1011d97b2d8608d0ff</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:06</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <hash>8ddabdca7141243708ecd89ce295d7021237e45680ea0f5d0c7b44e6f40d0aa2</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>2010</size_bytes>
+        <size_compressed>487</size_compressed>
+        <state>available</state>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:06</sys_created_on>
+        <sys_id>0d88b48171da0a10f085b85b40e754ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:06</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>0188b481fbda0a1011d97b2d8608d0ff</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="0d88b48171da0a10f085b85b40e754ff">0d88b48171da0a10f085b85b40e754ff</sys_attachment>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:06</sys_created_on>
+        <sys_id>0d88b4814ada0a10d64017f1275efbfc</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>tZXJkpswEIZfRaW5TA5ppNbOAIc8QV7BwSyqENuFyWC/fQSUl4yXmsS4uAipu391f1Ir2b5XZPerWW1TWnfdJo6ivu+hF7BuqwgZY1GwoJNJvGv86uc1Q+6ci8ZVSnq/7OqUSi2BK2EpqQtf1V2YsRyEQEHJuy/6b+tdShlh5GBIjutZsizKbZbkjd98X3Q18cuULsJ07tu8KUgePDlXwNBQku9Tag1Y6cJPm1IRxs6E8bbbN0VKS9808UuJw/e23ixy3+1jBqholCXRQSIMJ83q4Hcy5epvaRQIzGg3aaNkoLXGURy5HnbyQdyU9ofNB715okRVlrRF3pHdUFRwzHFKQhBuNEhhxZGB0DpUVOkTA44IUg0zbXB2YJi6KFVZDiLPE5gSOWMxorhSeHUHOQbOoWD8HvMpkfNqccPBSWnGbJDL4ObUMRscBRDPslEgjbOXgT/u/rqAlOCUmDP+OY1QeJA4aD0J9zwCjBm1dBdX7x95C6dBq+B6h7cuTWnuIhcGwTn+H8jH2J+iLpkAJueSeKBjrNar4hZaDNVEbucgewOmfEa/PuoMffvrJjTu+HfbvL4svjymduoUN4+OFuEhYPbByyxvHhsnAJmUc8QfnuzsD2iRVhvaBwAA</data>
+        <length>636</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="0d88b48171da0a10f085b85b40e754ff">0d88b48171da0a10f085b85b40e754ff</sys_attachment>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:06</sys_created_on>
+        <sys_id>8188b48157da0a10773feeaef25d27fd</sys_id>
+    </sys_attachment_doc>
+</record_update>

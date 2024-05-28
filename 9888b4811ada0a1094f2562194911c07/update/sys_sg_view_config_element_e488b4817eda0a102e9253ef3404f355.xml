@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>image 1</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e488b4817eda0a102e9253ef3404f355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>image 1</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_e488b4817eda0a102e9253ef3404f355</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:25</sys_updated_on>
+        <view_config display_value="Favorites View Config">e888b481eada0a106a3183df2ad07363</view_config>
+        <view_template_slot display_value="">b48cb21841e71010f877183fc9b8beb0</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

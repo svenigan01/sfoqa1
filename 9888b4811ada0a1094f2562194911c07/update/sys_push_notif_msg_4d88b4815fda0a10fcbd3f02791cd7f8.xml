@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_msg">
+    <sys_push_notif_msg action="INSERT_OR_UPDATE">
+        <message_string>Here is your ${note_date} reminder regarding ${contact}: ${note_subject}</message_string>
+        <name>Team Contacts Reminder Push</name>
+        <push_app display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</push_app>
+        <push_message_content display_value="Team Contacts Reminders Push">3088b48126da0a100652c9c531c4fcc0</push_message_content>
+        <subject/>
+        <sys_class_name>sys_push_notif_msg</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d88b4815fda0a10fcbd3f02791cd7f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contacts Reminder Push</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_push_notif_msg_4d88b4815fda0a10fcbd3f02791cd7f8</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:00</sys_updated_on>
+        <table>x_safia_contacts_relationship_contact_reminders</table>
+        <type>push</type>
+    </sys_push_notif_msg>
+</record_update>

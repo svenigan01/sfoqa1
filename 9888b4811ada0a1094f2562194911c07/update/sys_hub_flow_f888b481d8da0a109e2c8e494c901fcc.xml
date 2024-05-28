@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Notify Team Contact Reminder</description>
+        <internal_name>x_safia_contacts.notify_contact_reminder</internal_name>
+        <label_cache>[{"name":"9a3ab176-407c-400d-a6bb-102c71608833.state","label":"3➛State","reference_display":"State","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"2dbfa75d-2aa2-4e1a-a02e-5ed592a01156.email","label":"3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"39cc4c8f-f8e2-423e-8fbe-1bd7d501e2ae.output_state","label":"1 - Cancel Executing Flows➛Output State","reference_display":"Output State","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"32b986af-a9c7-41d9-8278-fd7fd12851c5"}},{"name":"Created or Updated_1.current","label":"Trigger➛Relationship Reminders Record","reference":"sn_team_contact_relationship_contact_reminders","reference_display":"Reminder","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Relationship Reminders Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_team_contact_relationship_contact_reminders","column_name":"sys_id"},{"name":"Created or Updated_1.current.sys_created_by","label":"Trigger➛Relationship Reminders Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_team_contact_relationship_contact_reminders","column_name":"sys_created_by"},{"name":"Created or Updated_1.current.note_date","label":"Trigger➛Relationship Reminders Record➛Notification date","reference":"","reference_display":"Notification date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sn_team_contact_relationship_contact_reminders","column_name":"note_date"},{"name":"35c06d0e-bc92-4437-99be-e2fcdf3abe99.total_duration","label":"2 - Wait for a duration of time➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"35c06d0e-bc92-4437-99be-e2fcdf3abe99.scheduled_end_date_time","label":"2 - Wait for a duration of time➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"39cc4c8f-f8e2-423e-8fbe-1bd7d501e2ae.__action_status__","label":"1 - Cancel Executing Flows➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"39cc4c8f-f8e2-423e-8fbe-1bd7d501e2ae.__dont_treat_as_error__","label":"1 - Cancel Executing Flows➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d92eb4f-ad76-4129-a486-61c7e17c3d3b.__action_status__","label":"3 - Trigger Reminder Event➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2d92eb4f-ad76-4129-a486-61c7e17c3d3b.__dont_treat_as_error__","label":"3 - Trigger Reminder Event➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf5ec3a7-56d4-4586-a13a-9a2aee838d99.__action_status__","label":"4 - Log➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf5ec3a7-56d4-4586-a13a-9a2aee838d99.__dont_treat_as_error__","label":"4 - Log➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>b088b481b7da0a1042c186bf380221cc</master_snapshot>
+        <name>Notify Contact Reminder</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>3c88b48181da0a106c76239bc220fccb</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>f888b481d8da0a109e2c8e494c901fcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notify Contact Reminder</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_hub_flow_f888b481d8da0a109e2c8e494c901fcc</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_safia_contacts_relationship_contact_reminders">note_dateVALCHANGES^ORcontactVALCHANGES^ORnote_subjectVALCHANGES<item endquery="false" field="note_date" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="contact" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="note_subject" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>3c88b48181da0a106c76239bc220fccb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>x_safia_contacts_relationship_contact_reminders</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"3888b48122da0a100cf792c0ca92f1cc","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>f888b481d8da0a109e2c8e494c901fcc</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>3888b48122da0a100cf792c0ca92f1cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <trigger display_value="">3c88b48181da0a106c76239bc220fccb</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>3888b48122da0a100cf792c0ca92f1cc</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7488b481e8da0a107cd270e2179fc0cc</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f888b481d8da0a109e2c8e494c901fcc^sys_idNOT IN3888b48122da0a100cf792c0ca92f1cc"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f888b481d8da0a109e2c8e494c901fcc^sys_idNOT INfc88b481f5da0a104f557441f98580cb"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fc88b481f5da0a104f557441f98580cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fc88b481f5da0a104f557441f98580cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fc88b481f5da0a104f557441f98580cb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>3088b481a5da0a1013145b85bd5f60cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="Run flow In">231e76460f103300b599bca2ff767e11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fc88b481f5da0a104f557441f98580cb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7888b481e0da0a10e15fccc19ae5accb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fc88b481f5da0a104f557441f98580cb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>b888b481c7da0a1005bc4b516edfd4ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>note_dateVALCHANGES^ORcontactVALCHANGES^ORnote_subjectVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fc88b481f5da0a104f557441f98580cb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>f488b481e5da0a10ee1071ae3d25a7ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>x_safia_contacts_relationship_contact_reminders</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=fc88b481f5da0a104f557441f98580cb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f888b481d8da0a109e2c8e494c901fcc^sys_idNOT IN7c88b481a5da0a1005bd27f3c13bb7ca"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f888b481d8da0a109e2c8e494c901fcc</id>
+        <name>Notify Contact Reminder</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7c88b481a5da0a1005bd27f3c13bb7ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7c88b481a5da0a1005bd27f3c13bb7ca"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f888b481d8da0a109e2c8e494c901fcc^sys_idNOT INb488b481ffda0a102fd1b450c304f5cb,f088b48183da0a10e24bafdbeb8497cb,f888b4811fda0a10e8758b40208934c9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</model>
+        <model_id>f888b481d8da0a109e2c8e494c901fcc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f888b481d8da0a109e2c8e494c901fcc</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b488b481ffda0a102fd1b450c304f5cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b488b481ffda0a102fd1b450c304f5cb"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD151f41c332b06010bfcb0d754d4fc335</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>9888b4811ada0a1094f2562194911c07</scope_name>
+        <serialized_content>{"FlowDesigner:FD151f41c332b06010bfcb0d754d4fc335":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD151f41c332b06010bfcb0d754d4fc335\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD151f41c332b06010bfcb0d754d4fc335.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD151f41c332b06010bfcb0d754d4fc335\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>8988b481d0da0a10ae7b78a23b85baed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:10</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD151f41c332b06010bfcb0d754d4fc335,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</model>
+        <model_id>f888b481d8da0a109e2c8e494c901fcc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f888b481d8da0a109e2c8e494c901fcc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f088b48183da0a10e24bafdbeb8497cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f088b48183da0a10e24bafdbeb8497cb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</model>
+        <model_id>f888b481d8da0a109e2c8e494c901fcc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f888b481d8da0a109e2c8e494c901fcc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f888b4811fda0a10e8758b40208934c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f888b4811fda0a10e8758b40208934c9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f888b481d8da0a109e2c8e494c901fcc^sys_idNOT IN3088b481adda0a10eab3f5104e9ba8c8,7888b48182da0a1077abd879090ff7c8,bc88b481dbda0a1089feab30488291c9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3088b481adda0a10eab3f5104e9ba8c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <ui_id>bf5ec3a7-56d4-4586-a13a-9a2aee838d99</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3088b481adda0a10eab3f5104e9ba8c8"/>
+    <sys_element_mapping action="delete_multiple" query="id=3088b481adda0a10eab3f5104e9ba8c8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>3088b481adda0a10eab3f5104e9ba8c8</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7088b481d2da0a1042be90cd248e8fc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{39cc4c8f-f8e2-423e-8fbe-1bd7d501e2ae.output_state}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3088b481adda0a10eab3f5104e9ba8c8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3088b481adda0a10eab3f5104e9ba8c8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Trigger Reminder Event">7c88b4810eda0a10b8d14b3e420fb5d5</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7888b48182da0a1077abd879090ff7c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <ui_id>2d92eb4f-ad76-4129-a486-61c7e17c3d3b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7888b48182da0a1077abd879090ff7c8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7888b48182da0a1077abd879090ff7c8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7488b4810cda0a104a17abcbc6d4f9c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>x_safia_contacts.notify_contact_reminder</value>
+        <variable display_value="Event Name">b488b481b2da0a107cba08812f20ebcd</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7888b48182da0a1077abd879090ff7c8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parameter_event_glide_object</field>
+        <id>7888b48182da0a1077abd879090ff7c8</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>3888b48151da0a10691888736bb1bec9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7c88b4810eda0a10b8d14b3e420fb5d5</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parameter_event_param1</field>
+        <id>7888b48182da0a1077abd879090ff7c8</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>3c88b4813ada0a10f37e70dc04e170c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7c88b4810eda0a10b8d14b3e420fb5d5</table>
+        <value>{{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parameter_event_param2</field>
+        <id>7888b48182da0a1077abd879090ff7c8</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>f088b4816bda0a108cf35e9186c651c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7c88b4810eda0a10b8d14b3e420fb5d5</table>
+        <value>{{Created or Updated_1.current.sys_created_by}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7888b48182da0a1077abd879090ff7c8^sys_idNOT INbc88b48113da0a10da4e7dd645e543c6"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>parameter_event_param2</input_name>
+        <instance>7888b48182da0a1077abd879090ff7c8</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_event_param2":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar created_by \u003d fd_data.trigger.current.sys_created_by;\nvar manager \u003d \u0027\u0027;\nvar gr_user \u003d new GlideRecord(\u0027sys_user\u0027);\ngr_user.addQuery(\"user_name\", created_by);\ngr_user.setLimit(1);\ngr_user.query();\nif (gr_user.next()) {\n    manager \u003d gr_user.manager.email+\u0027\u0027;\n}\nreturn manager;\n"}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>bc88b48113da0a10da4e7dd645e543c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7888b48182da0a1077abd879090ff7c8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Cancel Executing Flows">b488b4813eda0a10d657bc8f24e602dc</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bc88b481dbda0a1089feab30488291c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <ui_id>39cc4c8f-f8e2-423e-8fbe-1bd7d501e2ae</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bc88b481dbda0a1089feab30488291c9"/>
+    <sys_element_mapping action="delete_multiple" query="id=bc88b481dbda0a1089feab30488291c9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parameter_record_id</field>
+        <id>bc88b481dbda0a1089feab30488291c9</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>b088b4812cda0a1002ac57a357bb6fc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b488b4813eda0a10d657bc8f24e602dc</table>
+        <value>{{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bc88b481dbda0a1089feab30488291c9^sys_idNOT IN3488b4818bda0a1095d5ac7bafe1dfca,7088b481acda0a105bebe083aea4b5ca,b488b481cfda0a1014e0ef8b30d112c8,fc88b481dcda0a10461c5fd82be9f0c8"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>parameter_flow_id</input_name>
+        <instance>bc88b481dbda0a1089feab30488291c9</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_flow_id":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n//return current.flow+\u0027\u0027;\nreturn \"0ea8ff13c3602010ad755cb981d3ae93\"; // Current Flow Definition ID"}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>3488b4818bda0a1095d5ac7bafe1dfca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>parameter_record_id</input_name>
+        <instance>bc88b481dbda0a1089feab30488291c9</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_record_id":{"scriptActive":false}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7088b481acda0a105bebe083aea4b5ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>parameter_table_name</input_name>
+        <instance>bc88b481dbda0a1089feab30488291c9</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_table_name":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \"Relationship Reminder\";"}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>b488b481cfda0a1014e0ef8b30d112c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>parameter_flow_context_id</input_name>
+        <instance>bc88b481dbda0a1089feab30488291c9</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_flow_context_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n//return current.sys_id + \u0027\u0027;\nvar flow_context_id \u003d \u0027\u0027;\nvar current_record_id \u003d fd_data.trigger.current.sys_id+\u0027\u0027;\nvar gr_sys_flow_context \u003d new GlideRecord(\"sys_flow_context\");\ngr_sys_flow_context.addEncodedQuery(\"flow\u003d0ea8ff13c3602010ad755cb981d3ae93^name\u003dNotify Contact Reminder\");\ngr_sys_flow_context.addQuery(\"source_record\", current_record_id);\ngr_sys_flow_context.orderByDesc(\u0027sys_created_on\u0027);\ngr_sys_flow_context.setLimit(1);\ngr_sys_flow_context.query();\nif (gr_sys_flow_context.next()) {\n    flow_context_id \u003d gr_sys_flow_context.sys_id+\u0027\u0027;\n}\n//flow_context_id \u003d FlowScriptAPI.getContextID(fd_data.trigger.current);\nreturn flow_context_id;"}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>fc88b481dcda0a10461c5fd82be9f0c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bc88b481dbda0a1089feab30488291c9"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f888b481d8da0a109e2c8e494c901fcc^sys_idNOT INf888b48166da0a10f9f3e3eea8419ac6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b888b481fdda0a10253ec621ff9dccc7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f888b48166da0a10f9f3e3eea8419ac6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <ui_id>35c06d0e-bc92-4437-99be-e2fcdf3abe99</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f888b48166da0a10f9f3e3eea8419ac6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f888b48166da0a10f9f3e3eea8419ac6</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>3488b48136da0a10930a8a1fc1decac7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>38fa64edc0a8016400f4a5724b0434b8</value>
+        <variable display_value="During the following schedule">fb55145473031300b61e66476bf6a762</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f888b48166da0a10f9f3e3eea8419ac6</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7488b48158da0a10fa322ed358d900c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>1970-01-01 00:00:01</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f888b48166da0a10f9f3e3eea8419ac6</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7c88b4816dda0a104835f96a721d53c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative date time">1f25d05473031300b61e66476bf6a773</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f888b48166da0a10f9f3e3eea8419ac6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>f488b481bcda0a10417c0a05b9c7a8c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>relative_duration</value>
+        <variable display_value="Duration Type">4973581473031300b61e66476bf6a785</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f888b48166da0a10f9f3e3eea8419ac6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>timer_relative_duration_datetime</field>
+        <id>f888b48166da0a10f9f3e3eea8419ac6</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>3888b48182da0a1093aabfe49a8e6ac6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e</table>
+        <value>{{Created or Updated_1.current.note_date}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f888b48166da0a10f9f3e3eea8419ac6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f888b48166da0a10f9f3e3eea8419ac6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f888b481d8da0a109e2c8e494c901fcc"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Notify Team Contact Reminder</description>
+        <internal_name>x_safia_contacts.notify_contact_reminder</internal_name>
+        <label_cache>[{"name":"35c06d0e-bc92-4437-99be-e2fcdf3abe99.scheduled_end_date_time","label":"2➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"35c06d0e-bc92-4437-99be-e2fcdf3abe99.total_duration","label":"2➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"Created or Updated_1.current.note_date","label":"Trigger➛Relationship Reminders Record➛Notification date","reference":"","reference_display":"Notification date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sn_team_contact_relationship_contact_reminders","column_name":"note_date"},{"name":"Created or Updated_1.current.sys_created_by","label":"Trigger➛Relationship Reminders Record➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_team_contact_relationship_contact_reminders","column_name":"sys_created_by"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger➛Relationship Reminders Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_team_contact_relationship_contact_reminders","column_name":"sys_id"},{"name":"Created or Updated_1.current","label":"Trigger➛Relationship Reminders Record","reference":"sn_team_contact_relationship_contact_reminders","reference_display":"Relationship Reminders","type":"reference","base_type":"reference","attributes":{}},{"name":"39cc4c8f-f8e2-423e-8fbe-1bd7d501e2ae.output_state","label":"1➛Output State","reference_display":"Output State","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"32b986af-a9c7-41d9-8278-fd7fd12851c5"}},{"name":"2dbfa75d-2aa2-4e1a-a02e-5ed592a01156.email","label":"3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a3ab176-407c-400d-a6bb-102c71608833.state","label":"3➛State","reference_display":"State","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}}]</label_cache>
+        <master>true</master>
+        <name>Notify Contact Reminder</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Notify Contact Reminder">f888b481d8da0a109e2c8e494c901fcc</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>b088b481b7da0a1042c186bf380221cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=b088b481b7da0a1042c186bf380221cc"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b088b481b7da0a1042c186bf380221cc^sys_idNOT IN3c88b48164da0a10603607e58a310bc5"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Contact Reminder">b088b481b7da0a1042c186bf380221cc</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c88b48164da0a10603607e58a310bc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3c88b48164da0a10603607e58a310bc5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3c88b48164da0a10603607e58a310bc5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>3088b481d5da0a107f74d19f6accffc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value/>
+        <variable display_value="Run flow In">231e76460f103300b599bca2ff767e11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3c88b48164da0a10603607e58a310bc5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7c88b4819bda0a105e4c24304f2e0cc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>x_safia_contacts_relationship_contact_reminders</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3c88b48164da0a10603607e58a310bc5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>b088b48192da0a108a128568c9a2e8c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3c88b48164da0a10603607e58a310bc5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>fc88b481a2da0a100c588d2c31479ac5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>note_dateVALCHANGES^ORcontactVALCHANGES^ORnote_subjectVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=3c88b48164da0a10603607e58a310bc5"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b088b481b7da0a1042c186bf380221cc"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b088b481b7da0a1042c186bf380221cc^sys_idNOT INb488b4811eda0a10c9d160bacb6041c5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b088b481b7da0a1042c186bf380221cc</id>
+        <name>Notify Contact Reminder</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b488b4811eda0a10c9d160bacb6041c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b488b4811eda0a10c9d160bacb6041c5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b088b481b7da0a1042c186bf380221cc^sys_idNOT IN3488b481efda0a1056a4c1c89b76fcc4,b888b48182da0a101efc9feb271bbfc4,f488b481f0da0a10720bd55b08e9b2c4"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD151f41c332b06010bfcb0d754d4fc335</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>9888b4811ada0a1094f2562194911c07</scope_name>
+        <serialized_content>{"FlowDesigner:FD151f41c332b06010bfcb0d754d4fc335":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD151f41c332b06010bfcb0d754d4fc335\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD151f41c332b06010bfcb0d754d4fc335.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD151f41c332b06010bfcb0d754d4fc335\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>8988b481d0da0a10ae7b78a23b85baed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:10</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD151f41c332b06010bfcb0d754d4fc335,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Contact Reminder">b088b481b7da0a1042c186bf380221cc</model>
+        <model_id>b088b481b7da0a1042c186bf380221cc</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b088b481b7da0a1042c186bf380221cc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3488b481efda0a1056a4c1c89b76fcc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3488b481efda0a1056a4c1c89b76fcc4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Contact Reminder">b088b481b7da0a1042c186bf380221cc</model>
+        <model_id>b088b481b7da0a1042c186bf380221cc</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b088b481b7da0a1042c186bf380221cc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b888b48182da0a101efc9feb271bbfc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b888b48182da0a101efc9feb271bbfc4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Contact Reminder">b088b481b7da0a1042c186bf380221cc</model>
+        <model_id>b088b481b7da0a1042c186bf380221cc</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b088b481b7da0a1042c186bf380221cc</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f488b481f0da0a10720bd55b08e9b2c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f488b481f0da0a10720bd55b08e9b2c4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b088b481b7da0a1042c186bf380221cc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b088b481b7da0a1042c186bf380221cc"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b088b481b7da0a1042c186bf380221cc^sys_idNOT IN3888b481f0da0a109afc4881599e45c3,7888b481b7da0a10f269dee0214aedc2,b888b48114da0a10df6eb516d028bdc1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Trigger Reminder Event">7c88b4810eda0a10b8d14b3e420fb5d5</action_type>
+        <action_type_parent display_value="Trigger Reminder Event">f488b48176da0a10b3b1ba4f9695e3d5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Contact Reminder">b088b481b7da0a1042c186bf380221cc</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3888b481f0da0a109afc4881599e45c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <ui_id>2d92eb4f-ad76-4129-a486-61c7e17c3d3b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3888b481f0da0a109afc4881599e45c3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3888b481f0da0a109afc4881599e45c3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>b088b481a6da0a10eb87f052e68c5dc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <value>x_safia_contacts.notify_contact_reminder</value>
+        <variable display_value="Event Name">b488b481b2da0a107cba08812f20ebcd</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3888b481f0da0a109afc4881599e45c3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parameter_event_glide_object</field>
+        <id>3888b481f0da0a109afc4881599e45c3</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>f888b481a9da0a10d111877ddbb9e1c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7c88b4810eda0a10b8d14b3e420fb5d5</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parameter_event_param1</field>
+        <id>3888b481f0da0a109afc4881599e45c3</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>bc88b481a9da0a10fc3a9493fec8e7c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7c88b4810eda0a10b8d14b3e420fb5d5</table>
+        <value>{{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parameter_event_param2</field>
+        <id>3888b481f0da0a109afc4881599e45c3</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7088b481dcda0a1004639f6dc46a7ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7c88b4810eda0a10b8d14b3e420fb5d5</table>
+        <value>{{Created or Updated_1.current.sys_created_by}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3888b481f0da0a109afc4881599e45c3^sys_idNOT IN7488b48147da0a107e95f77b2dd553c3"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>parameter_event_param2</input_name>
+        <instance>3888b481f0da0a109afc4881599e45c3</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_event_param2":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar created_by \u003d fd_data.trigger.current.sys_created_by;\nvar manager \u003d \u0027\u0027;\nvar gr_user \u003d new GlideRecord(\u0027sys_user\u0027);\ngr_user.addQuery(\"user_name\", created_by);\ngr_user.setLimit(1);\ngr_user.query();\nif (gr_user.next()) {\n    manager \u003d gr_user.manager.email+\u0027\u0027;\n}\nreturn manager;\n"}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_id>7488b48147da0a107e95f77b2dd553c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3888b481f0da0a109afc4881599e45c3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Contact Reminder">b088b481b7da0a1042c186bf380221cc</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7888b481b7da0a10f269dee0214aedc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <ui_id>bf5ec3a7-56d4-4586-a13a-9a2aee838d99</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7888b481b7da0a10f269dee0214aedc2"/>
+    <sys_element_mapping action="delete_multiple" query="id=7888b481b7da0a10f269dee0214aedc2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>7888b481b7da0a10f269dee0214aedc2</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>f088b48131da0a10548cadd02999f7c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{39cc4c8f-f8e2-423e-8fbe-1bd7d501e2ae.output_state}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7888b481b7da0a10f269dee0214aedc2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7888b481b7da0a10f269dee0214aedc2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Cancel Executing Flows">b488b4813eda0a10d657bc8f24e602dc</action_type>
+        <action_type_parent display_value="Cancel Executing Flows">3088b481c7da0a10924f40332f99f7dc</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Contact Reminder">b088b481b7da0a1042c186bf380221cc</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b888b48114da0a10df6eb516d028bdc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <ui_id>39cc4c8f-f8e2-423e-8fbe-1bd7d501e2ae</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b888b48114da0a10df6eb516d028bdc1"/>
+    <sys_element_mapping action="delete_multiple" query="id=b888b48114da0a10df6eb516d028bdc1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>parameter_record_id</field>
+        <id>b888b48114da0a10df6eb516d028bdc1</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>f488b48180da0a107235f4e99cb4e5c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b488b4813eda0a10d657bc8f24e602dc</table>
+        <value>{{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b888b48114da0a10df6eb516d028bdc1^sys_idNOT IN3088b4815bda0a10d0c31f50b05b56c2,3c88b4813dda0a10911be6330aff9cc2,7c88b481acda0a10375495b52315d1c1,fc88b48144da0a109093fe83ee133dc2"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>parameter_record_id</input_name>
+        <instance>b888b48114da0a10df6eb516d028bdc1</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_record_id":{"scriptActive":false}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>3088b4815bda0a10d0c31f50b05b56c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>parameter_table_name</input_name>
+        <instance>b888b48114da0a10df6eb516d028bdc1</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_table_name":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \"Relationship Reminder\";"}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>3c88b4813dda0a10911be6330aff9cc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>parameter_flow_id</input_name>
+        <instance>b888b48114da0a10df6eb516d028bdc1</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_flow_id":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n//return current.flow+\u0027\u0027;\nreturn \"0ea8ff13c3602010ad755cb981d3ae93\"; // Current Flow Definition ID"}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>7c88b481acda0a10375495b52315d1c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>parameter_flow_context_id</input_name>
+        <instance>b888b48114da0a10df6eb516d028bdc1</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"parameter_flow_context_id":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n//return current.sys_id + \u0027\u0027;\nvar flow_context_id \u003d \u0027\u0027;\nvar current_record_id \u003d fd_data.trigger.current.sys_id+\u0027\u0027;\nvar gr_sys_flow_context \u003d new GlideRecord(\"sys_flow_context\");\ngr_sys_flow_context.addEncodedQuery(\"flow\u003d0ea8ff13c3602010ad755cb981d3ae93^name\u003dNotify Contact Reminder\");\ngr_sys_flow_context.addQuery(\"source_record\", current_record_id);\ngr_sys_flow_context.orderByDesc(\u0027sys_created_on\u0027);\ngr_sys_flow_context.setLimit(1);\ngr_sys_flow_context.query();\nif (gr_sys_flow_context.next()) {\n    flow_context_id \u003d gr_sys_flow_context.sys_id+\u0027\u0027;\n}\n//flow_context_id \u003d FlowScriptAPI.getContextID(fd_data.trigger.current);\nreturn flow_context_id;"}}</script>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>fc88b48144da0a109093fe83ee133dc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b888b48114da0a10df6eb516d028bdc1"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b088b481b7da0a1042c186bf380221cc"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b088b481b7da0a1042c186bf380221cc^sys_idNOT INb488b481acda0a10502a26129c6873c2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b888b481fdda0a10253ec621ff9dccc7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Notify Contact Reminder">b088b481b7da0a1042c186bf380221cc</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b488b481acda0a10502a26129c6873c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <ui_id>35c06d0e-bc92-4437-99be-e2fcdf3abe99</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b488b481acda0a10502a26129c6873c2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b488b481acda0a10502a26129c6873c2</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>3488b481f6da0a10fd1352d48e4616c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <value>1970-01-01 00:00:01</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b488b481acda0a10502a26129c6873c2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>7088b4814ada0a10a06bede2448592c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <value>relative_duration</value>
+        <variable display_value="Duration Type">4973581473031300b61e66476bf6a785</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b488b481acda0a10502a26129c6873c2</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>7888b481e7da0a1080268664c2e35ac0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <value>38fa64edc0a8016400f4a5724b0434b8</value>
+        <variable display_value="During the following schedule">fb55145473031300b61e66476bf6a762</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b488b481acda0a10502a26129c6873c2</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>b488b481dcda0a106e7c22a5b3963fc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative date time">1f25d05473031300b61e66476bf6a773</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b488b481acda0a10502a26129c6873c2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>timer_relative_duration_datetime</field>
+        <id>b488b481acda0a10502a26129c6873c2</id>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:17</sys_created_on>
+        <sys_id>bc88b4815dda0a10ef2811ca21cabfc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e</table>
+        <value>{{Created or Updated_1.current.note_date}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b488b481acda0a10502a26129c6873c2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b488b481acda0a10502a26129c6873c2"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b088b481b7da0a1042c186bf380221cc"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b088b481b7da0a1042c186bf380221cc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b088b481b7da0a1042c186bf380221cc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b088b481b7da0a1042c186bf380221cc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b088b481b7da0a1042c186bf380221cc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b088b481b7da0a1042c186bf380221cc"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f888b481d8da0a109e2c8e494c901fcc</sys_id>
+        <latest_snapshot>b088b481b7da0a1042c186bf380221cc</latest_snapshot>
+        <compiler_build>glide-01-17-2022_1800.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f888b481d8da0a109e2c8e494c901fcc^sys_idNOT IN7888b4814bda0a10d739246ed76778c5"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"5319f556c37c2010ad755cb981d3ae61","name":"plan","plan_signature":null}}</plan>
+        <plan_id>f888b481d8da0a109e2c8e494c901fcc</plan_id>
+        <snapshot>f088b48150da0a100d96582b68362cc5</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>7888b4814bda0a10d739246ed76778c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:16</sys_updated_on>
+        <trigger display_value="">3c88b48181da0a106c76239bc220fccb</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f888b481d8da0a109e2c8e494c901fcc"/>
+</record_update>

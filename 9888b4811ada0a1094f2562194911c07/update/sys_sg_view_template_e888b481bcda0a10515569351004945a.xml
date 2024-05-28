@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Team Contact Notes</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:29:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e888b481bcda0a10515569351004945a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contact Notes</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_view_template_e888b481bcda0a10515569351004945a</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:29:56</sys_updated_on>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":15,"Bottom":17},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"Root","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":18},"MaxLines":8,"textStyle":"headline","CellId":"8bfa840f-6b82-7110-88df-6d12c713cfaf","Margin":{"Bottom":6}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"bold","Size":16},"MaxLines":1,"textStyle":"custom","CellId":"4b19c1f8-b8de-7d3d-eea2-31b0eaff5255","Margin":{"Bottom":6}},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Margin":{"Bottom":4},"Children":[{"Type":"Text","TextColor":"#7D8A8C","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"fieldLabel","CellId":"6d12654d-729e-744e-7e55-721e289caba9","Margin":{"Right":10}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"fieldValue","CellId":"d5b88ad0-fc91-c5d3-c524-7aeda4a1d90a"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Children":[{"Type":"Text","TextColor":"#7D8A8C","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"fieldLabel","CellId":"38c7d1f6-0234-ef59-2624-406ffc4f2de0","Margin":{"Right":10}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"fieldValue","CellId":"3096cff7-4785-1920-d502-e339c6950236"}]}]}</template_json>
+    </sys_sg_view_template>
+</record_update>

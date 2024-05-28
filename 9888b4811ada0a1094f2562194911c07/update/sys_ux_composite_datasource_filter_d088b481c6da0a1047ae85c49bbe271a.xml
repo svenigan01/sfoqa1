@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_datasource_filter">
+    <sys_ux_composite_datasource_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_condition/>
+        <condition/>
+        <datasource display_value="Team Contact User">9888b481e5da0a1017bb6451711cc01c</datasource>
+        <datasource_table>sys_user</datasource_table>
+        <filter display_value="SAVED">9088b481bdda0a10a5285a2545b4af1b</filter>
+        <name>Saved Contacts</name>
+        <sys_class_name>sys_ux_composite_datasource_filter</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d088b481c6da0a1047ae85c49bbe271a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Saved Contacts</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_composite_datasource_filter_d088b481c6da0a1047ae85c49bbe271a</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:22</sys_updated_on>
+    </sys_ux_composite_datasource_filter>
+</record_update>

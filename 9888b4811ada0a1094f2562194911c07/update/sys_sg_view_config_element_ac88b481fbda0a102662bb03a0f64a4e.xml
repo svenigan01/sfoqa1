@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>custom_MCB_view_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:29:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ac88b481fbda0a102662bb03a0f64a4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>custom_MCB_view_element</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_ac88b481fbda0a102662bb03a0f64a4e</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:29:55</sys_updated_on>
+        <view_config display_value="My Teammates View Config">f088b48180da0a10e783cdefb02cb877</view_config>
+        <view_template_slot display_value="b9221459-d5c4-004d-0d11-182a48ff948c">6488b481c1da0a10072257064854ba54</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

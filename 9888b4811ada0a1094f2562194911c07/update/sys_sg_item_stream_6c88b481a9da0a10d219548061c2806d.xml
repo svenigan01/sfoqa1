@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="My Favorites">3888b481acda0a109b3a1f0179af7f7b</data_item>
+        <interleaved_field/>
+        <name>Favorites Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6c88b481a9da0a10d219548061c2806d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Favorites Item Stream</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_item_stream_6c88b481a9da0a10d219548061c2806d</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:32</sys_updated_on>
+        <table>x_safia_contacts_relationship_contact</table>
+    </sys_sg_item_stream>
+</record_update>

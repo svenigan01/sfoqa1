@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy">
+    <sys_kmf_crypto_caller_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <approval_type/>
+        <check_script_hash>false</check_script_hash>
+        <crypto_module display_value="com_snc_core_automation_glideencrypter">bddc8db07722201099808d11681061bc</crypto_module>
+        <crypto_spec display_value="com_snc_core_automation_glideencrypter --- Symmetric Key Wrapping/Unwrapping">71dc8db07722201099808d11681061be</crypto_spec>
+        <granular_operation/>
+        <identity_group_alias/>
+        <impersonation>false</impersonation>
+        <instance_recipient/>
+        <owner>2b150ee4ff262c889376762fa87efeba</owner>
+        <policy_name>AutoGen-scope-x_safia_contacts-global.com_snc_core_automation_glideencrypter</policy_name>
+        <result>track</result>
+        <script_hash/>
+        <script_table/>
+        <signature_data/>
+        <specify_purpose>false</specify_purpose>
+        <sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:37:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>304af4451bda0a108abf0d076e4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_kmf_crypto_caller_policy_304af4451bda0a108abf0d076e4bcb7a</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:37:25</sys_updated_on>
+        <target_role/>
+        <target_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</target_scope>
+        <target_script/>
+        <type>3</type>
+        <used>false</used>
+    </sys_kmf_crypto_caller_policy>
+</record_update>

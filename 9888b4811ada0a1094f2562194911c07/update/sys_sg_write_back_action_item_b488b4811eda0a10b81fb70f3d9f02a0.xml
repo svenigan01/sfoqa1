@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+	var contactRecord = "";
+	var userGR = new GlideRecord('x_safia_contacts_relationship_contact');
+	userGR.addQuery('contact_name', input.sys_id);
+	userGR.addQuery('name', gs.getUserID());
+	userGR.query();
+	if (userGR.next()) {
+		contactRecord = userGR.getValue('sys_id');
+	}
+	
+	if (!contactRecord) { //if no contact record, create one before adding the reminder
+		var newRelationshipGR = new GlideRecord('x_safia_contacts_relationship_contact');
+		newRelationshipGR.initialize();
+		newRelationshipGR.name = gs.getUserID();
+		newRelationshipGR.contact_name = input.sys_id;
+		contactRecord = newRelationshipGR.insert();
+	}
+	
+   var gr = new GlideRecord('x_safia_contacts_relationship_contact_reminders');
+	gr.initialize(); 
+	gr.contact = contactRecord; 
+	gr.note_date = input.Notification_date;
+	gr.note_subject = input.Notification_subject;
+	gr.insert();
+ 
+})(input);]]></execution_script>
+        <name>Add Reminder for Contact</name>
+        <parameter_screen/>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b488b4811eda0a10b81fb70f3d9f02a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Reminder for Contact</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_b488b4811eda0a10b81fb70f3d9f02a0</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:02</sys_updated_on>
+        <table>x_safia_contacts_relationship_contact_reminders</table>
+        <template/>
+        <type>script</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+</record_update>

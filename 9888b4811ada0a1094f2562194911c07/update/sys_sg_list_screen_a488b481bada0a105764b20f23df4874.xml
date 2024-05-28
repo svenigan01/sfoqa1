@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_list_screen">
+    <sys_sg_list_screen action="INSERT_OR_UPDATE">
+        <available_offline>false</available_offline>
+        <description>This is the notes list for relationship table, not sys user table</description>
+        <dynamic_prefetch_count/>
+        <empty_state display_value="Notes Empty State">7c88b48117da0a1068b749e54c767779</empty_state>
+        <fetch_type>on_demand</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="icon-Address-Book">a088b4811ada0a10bd2664d5c6a77272</icon>
+        <name>Notes</name>
+        <parameter_screen/>
+        <roles_override/>
+        <sys_class_name>sys_sg_list_screen</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:29:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a488b481bada0a105764b20f23df4874</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notes</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_list_screen_a488b481bada0a105764b20f23df4874</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:29:57</sys_updated_on>
+    </sys_sg_list_screen>
+</record_update>

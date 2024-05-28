@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Add Note">3888b48129da0a10cd59b9c01c04aab0</button>
+        <item_parameter display_value="Where">7888b48150da0a10977508c58f57b6af</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fc88b4813bda0a1006159f0d4244e8ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7888b48150da0a10977508c58f57b6af</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_fc88b4813bda0a1006159f0d4244e8ac</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:13</sys_updated_on>
+        <ui_parameter display_value="Where did you meet">3488b4812dda0a10424be8d047dbf6ae</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

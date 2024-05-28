@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_safia_contacts.Related Content Teammates Transform</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Related Content Teammates Transform</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+"name": "users",&#13;
+"label": "Users",&#13;
+"description": "",&#13;
+"readOnly": false,&#13;
+"fieldType": "array",&#13;
+"mandatory": true,&#13;
+"defaultValue":[]&#13;
+}&#13;
+]</props>
+        <required_translations>[{"message":"Users","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	return input.users.map(function(user) {
+		var title = user.title.displayValue ? 
+			{"text": user.title.displayValue, "type": "string"} : "";
+		var email = user.email.displayValue ? 
+			{"text": user.email.displayValue, "type": "string"} : "";
+		var phone = user.phone.displayValue ? 
+			{"text": user.phone.displayValue, "type": "string"} : "";
+		
+		return {
+			"title": {
+				"label": user.name.displayValue,
+				"variant": "primary"
+			},
+			"fields": [
+				title,
+				email,
+				phone
+			]
+		};
+	});
+
+}
+]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3488b48121da0a106c88d9d5148d30ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Related Content Teammates Transform</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_3488b48121da0a106c88d9d5148d30ba</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:33</sys_updated_on>
+    </sys_ux_data_broker_transform>
+</record_update>

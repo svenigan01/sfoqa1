@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="contacts">0d88f481f5da0a10e64211e0888f1501</page>
+        <required_translations>[{"message":"Logout","comment":""},{"message":"UserMenu","comment":""}]</required_translations>
+        <route display_value="Search">6888b481acda0a1082a8cf777c5afb26</route>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>1888b48117da0a107f2f1537969f6512</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_page_property_1888b48117da0a107f2f1537969f6512</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:13</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_safia_contacts.0d88f481f5da0a10e64211e0888f1501.route.chrome_header.6888b481acda0a1082a8cf777c5afb26</unique_name>
+        <value>{&#13;
+  "privatePage": {&#13;
+    "notificationsEnabled": true,&#13;
+    "searchEnabled": false,&#13;
+    "userPrefsEnabled": true,&#13;
+    "globalTools": {&#13;
+      "collapsingMenuId": 0,&#13;
+      "primaryItems": [&#13;
+        {&#13;
+          "label": "UserMenu",&#13;
+          "icon": "user",&#13;
+          "type": "menu",&#13;
+          "primaryDisplay": "icon",&#13;
+          "value": {&#13;
+            "children": [&#13;
+              {&#13;
+                "label": "Logout",&#13;
+                "type": "navigation",&#13;
+                "position": 200,&#13;
+                "value": {&#13;
+                  "value": {&#13;
+                    "href": "/x/safia/x_safia_contacts/login/params/logged-out/true"&#13;
+                  },&#13;
+                  "type": ""&#13;
+                }&#13;
+              }&#13;
+            ]&#13;
+          }&#13;
+        }&#13;
+      ],&#13;
+      "secondaryItems": []&#13;
+    }&#13;
+  },&#13;
+  "publicPage": {&#13;
+"logoRoute": {&#13;
+                "type":"route",&#13;
+                "value": {&#13;
+                    "route": "home",&#13;
+                    "fields": {}&#13;
+                }&#13;
+        },&#13;
+    "actionButtons": []&#13;
+  }&#13;
+}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=1888b48117da0a107f2f1537969f6512"/>
+</record_update>

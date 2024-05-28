@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_safia_contacts_relationship_contact_reminders</collection>
+        <email_layout display_value="Team Contact Reminder Notification">0988b48150da0a10833080ca46b6a1f7</email_layout>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text/>
+        <name>Team Contact Reminder Notification</name>
+        <sms_alternate/>
+        <subject>${note_subject}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0588b4816cda0a10179dcdb7116748f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contact Reminder Notification</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sysevent_email_template_0588b4816cda0a10179dcdb7116748f8</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:12</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

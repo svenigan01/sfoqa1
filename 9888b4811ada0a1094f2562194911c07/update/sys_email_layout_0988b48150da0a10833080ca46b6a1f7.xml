@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_layout">
+    <sys_email_layout action="INSERT_OR_UPDATE">
+        <advanced>true</advanced>
+        <advanced_layout><![CDATA[<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto"/>
+<style>
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive columns */
+/* On screens that are 600px wide or more switch to 600px */
+@media screen and (min-width: 600px) {
+  div.container {
+    width: 600px;
+  }
+}
+
+/* On screens that are 600px wide or less switch to 375px */
+@media screen and (max-width: 600px) {
+ div.container {
+    width: 375px;
+  }
+}
+
+.card-header-black {
+  background-color: black !important;
+  color : white;
+}
+.btn-primary {
+  background-color:#0378D6 !important;
+  font-size: 10px !important;
+}
+	
+.nopadding {
+ padding: 0px!important;
+}
+.full {
+ width: 100%;
+}
+div.card-body {
+       padding-left: 0px !important;
+       padding-right: 0px !important;;
+    }
+.reminder-header {
+	font-size: 15px;
+	font-weight: bold;
+}		
+.reminder-footer {
+	padding-left: 20%;
+}
+.reminder-icon {
+	padding-left: 48%;
+}
+
+.reminder-footer-text {
+	font-size: 9px;
+	text-align: left;
+}	
+.reminder-content-text {
+	font-size: 12px;
+	padding: 2;
+    margin: 0;
+}	
+.reminder-content-label {
+	font-size: 9px;
+	font-weight: bold;
+	padding: 2;
+    margin: 0;
+}
+.card-image-status {
+  fill: #0378D6;
+  background-color:#0378D6 ;
+  border-radius: 50%;	
+}
+.reminder-status {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: #0378D6;
+    color: white;
+    text-align:center;
+    padding: 1px;
+}
+</style>
+</head>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" /> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+<body>
+ ${notification:body}
+</body>	
+</html>]]></advanced_layout>
+        <description>Team Contact Reminder Notification Layout</description>
+        <layout><![CDATA[<p><br /></p>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive columns */
+/* On screens that are 600px wide or more switch to 600px */
+@media screen and (min-width: 600px) {
+  div.container {
+    width: 600px;
+  }
+}
+
+/* On screens that are 600px wide or less switch to 375px */
+@media screen and (max-width: 600px) {
+ div.container {
+    width: 375px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  text-align: center;
+ 
+}
+
+
+.card-header-black {
+  background-color: black !important;
+  color : white;
+}
+.nopadding {
+ padding: 0px!important;
+}
+.full {
+ width: 100%;
+}
+div.card-body {
+       padding-left: 0px !important;
+       padding-right: 0px !important;;
+    }
+</style>
+<p><br /></p>
+<p>${notification:body}</p>
+<div class="container">
+<div class="card text-center">
+<div class="card-header card-header-black">Company Co</div>
+<div class="card-body">
+<h5 class="card-title">Here's your reminder about this contact</h5>
+<h6>When</h6>
+<p class="card-text">WhenText- TODO</p>
+<h6>Who</h6>
+<p class="card-text">WhoText- TODO</p>
+<h6>Subject</h6>
+<p class="card-text">SubjectText- TODO</p>
+<a class="btn btn-primary" href="#">View Contact</a>
+<div class="card-image"><img class="nopadding full" src="http://localhost:8080/x_safia_contacts.team_contact_tile.svg" /></div>
+<div class="text-muted">This email was sent you by the company's team contact system.
+<p>&copy; ServiceNow Inc</p>
+</div>
+</div>
+</div>
+</div>]]></layout>
+        <name>Team Contact Reminder Notification</name>
+        <sys_class_name>sys_email_layout</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0988b48150da0a10833080ca46b6a1f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contact Reminder Notification</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_email_layout_0988b48150da0a10833080ca46b6a1f7</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:14</sys_updated_on>
+    </sys_email_layout>
+</record_update>

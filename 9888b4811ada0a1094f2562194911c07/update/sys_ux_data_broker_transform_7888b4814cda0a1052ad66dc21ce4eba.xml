@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_safia_contacts.Show notes &amp; reminder Transform</api_name>
+        <description>- Profile page reminders/notes card should only have cards belong to the user whose profile is displayed</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Show notes &amp; reminder Transform</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "notes_reminders",&#13;
+    "label": "Notes/Reminders output",&#13;
+    "description": "",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "object",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+  {&#13;
+    "name": "contact_id",&#13;
+    "label": "Contact ID",&#13;
+    "description": "",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props>
+        <required_translations>[{"message":"Notes/Reminders output","comment":""},{"message":"Contact ID","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	
+   input.notes_reminders.items = input.notes_reminders.items.filter(function(item) {
+		
+        var sys_id = item.propValues.model.sys_id;
+		var table = item.propValues.model.table;
+		
+		var savedContactGR = new GlideRecord(table);
+		savedContactGR.get(sys_id);
+		if(savedContactGR.isValidRecord()) {
+
+			if (input.contact_id == savedContactGR.contact.contact_name + '') {
+				return item;
+			}
+				
+		}
+		
+    });
+	
+    return input.notes_reminders;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:29:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7888b4814cda0a1052ad66dc21ce4eba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show notes &amp; reminder Transform</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_7888b4814cda0a1052ad66dc21ce4eba</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:29:58</sys_updated_on>
+    </sys_ux_data_broker_transform>
+</record_update>

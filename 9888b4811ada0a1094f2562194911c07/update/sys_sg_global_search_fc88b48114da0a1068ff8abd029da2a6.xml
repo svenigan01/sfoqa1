@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_global_search">
+    <sys_sg_global_search action="INSERT_OR_UPDATE">
+        <default_empty_state display_value="Search Default Empty State">df1f61855bd8a010da168d8fa881c75d</default_empty_state>
+        <filtered_empty_state display_value="Search Default Empty State">df1f61855bd8a010da168d8fa881c75d</filtered_empty_state>
+        <interleave>true</interleave>
+        <name>Employee Search</name>
+        <placeholder>Search for an employee</placeholder>
+        <search_context_config display_value="Team Contact Search Configuration">8188b48188da0a1000e2e565c3f591fa</search_context_config>
+        <sys_class_name>sys_sg_global_search</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fc88b48114da0a1068ff8abd029da2a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Search</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_global_search_fc88b48114da0a1068ff8abd029da2a6</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:21</sys_updated_on>
+        <vision_api_enabled>false</vision_api_enabled>
+    </sys_sg_global_search>
+</record_update>

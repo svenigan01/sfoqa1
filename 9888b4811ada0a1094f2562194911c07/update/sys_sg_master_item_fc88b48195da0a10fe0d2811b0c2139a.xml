@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_safia_contacts_relationship_notes</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="">2d8cfb780f016010e3a6120ba4767edb</embedded_screen>
+        <item_view/>
+        <name>List of Notes Main Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:29:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fc88b48195da0a10fe0d2811b0c2139a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List of Notes Main Item</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_master_item_fc88b48195da0a10fe0d2811b0c2139a</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:29:59</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="List of Notes View Config">a488b48196da0a100b77f2d9d2e8b165</view_config>
+    </sys_sg_master_item>
+</record_update>

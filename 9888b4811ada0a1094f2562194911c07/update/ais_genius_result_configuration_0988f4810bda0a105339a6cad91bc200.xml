@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_genius_result_configuration">
+    <ais_genius_result_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <handler_type>search</handler_type>
+        <name>Team Contact  Genius Result</name>
+        <request_processor_script/>
+        <response_processor_script/>
+        <return_fields>name,department,title,location,avatar,mobile_phone,email</return_fields>
+        <script><![CDATA[function process(context) {
+	var answer = new sn_ais.GeniusResultAnswer();
+	answer.setTable('sys_user');
+	answer.setEncodedQuery('active=true');
+	answer.addSearchPhrases([context.getOriginalSearchPhrase()]);
+	answer.setSearchLimit(1);
+	return answer;
+}]]></script>
+        <sys_class_name>ais_genius_result_configuration</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0988f4810bda0a105339a6cad91bc200</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contact  Genius Result</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>ais_genius_result_configuration_0988f4810bda0a105339a6cad91bc200</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:18</sys_updated_on>
+        <term/>
+        <trigger_condition>always</trigger_condition>
+    </ais_genius_result_configuration>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile">
+    <ais_search_profile action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Team Contact Default Search Profile</description>
+        <exclude_from_evaluation>false</exclude_from_evaluation>
+        <genius_result_assembly/>
+        <label>Team Contact Default Search Profile</label>
+        <name>x_safia_contacts_team_contact_default_se</name>
+        <publish_id>27b8d519-298a-43da-bd59-04ed2f469ffa</publish_id>
+        <qna_model_id/>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_search_profile</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0588f481f8da0a10a2afc3fa2336e801</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contact Default Search Profile</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>ais_search_profile_0588f481f8da0a10a2afc3fa2336e801</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:08</sys_updated_on>
+    </ais_search_profile>
+</record_update>

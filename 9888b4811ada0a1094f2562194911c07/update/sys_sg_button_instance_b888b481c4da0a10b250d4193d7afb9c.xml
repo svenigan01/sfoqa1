@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Mobile phone">3088b48117da0a10a205e794ebf106a3</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <disable_offline>false</disable_offline>
+        <field_name>mobile_phone</field_name>
+        <icon/>
+        <label/>
+        <location>field</location>
+        <name/>
+        <order>10</order>
+        <parent>3c88b48153da0a100959f349a3c2d99d</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b888b481c4da0a10b250d4193d7afb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_button_instance_b888b481c4da0a10b250d4193d7afb9c</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:14</sys_updated_on>
+        <table>sys_user</table>
+    </sys_sg_button_instance>
+</record_update>

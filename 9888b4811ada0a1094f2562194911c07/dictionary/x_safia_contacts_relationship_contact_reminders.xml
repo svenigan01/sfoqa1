@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6188f4811bda0a108abf0d076e4bcb5c" label="Reminder" max_length="40" name="x_safia_contacts_relationship_contact_reminders" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" display="true" label="Contact" mandatory="true" max_length="32" name="contact" reference="x_safia_contacts_relationship_contact" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date to remind me" mandatory="true" max_length="40" name="note_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Subject (max 40 characters)" mandatory="true" max_length="40" name="note_subject" type="string"/>
+        <index name="index">
+            <element name="contact"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_safia_contacts.Saved Contacts Reminder Transform</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Saved Contacts Reminder Transform</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+    {&#13;
+        "name": "evamData",&#13;
+        "label": "Evam Output",&#13;
+        "description": "",&#13;
+        "readOnly": false,&#13;
+        "fieldType": "object",&#13;
+        "mandatory": true,&#13;
+        "defaultValue": ""&#13;
+    }&#13;
+]</props>
+        <required_translations>[{"message":"Evam Output","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    input.evamData.items = input.evamData.items.map(function(item) {
+		
+        var sys_id = item.propValues.model.sys_id;
+		
+		var savedContactGR = new GlideRecord("x_safia_contacts_relationship_contact");
+		if(savedContactGR.get(sys_id)){
+			var reminderCount = 0;
+		
+			var relationshipGR = new GlideAggregate("x_safia_contacts_relationship_contact_reminders");
+			relationshipGR.addEncodedQuery('contact.contact_name=' + savedContactGR.contact_name.toString() + '^contact.name=' + gs.getUserID());
+			relationshipGR.addAggregate('COUNT');
+			relationshipGR.query();
+			if (relationshipGR.next())
+				reminderCount = relationshipGR.getAggregate('COUNT');
+
+			if (reminderCount > 0)
+				item.propValues.textHeaderLabel = gs.getMessage("Reminder saved");
+		}
+		
+
+        return item;
+    });
+    return input.evamData;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f888b48141da0a10073116517a2142b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Saved Contacts Reminder Transform</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_f888b48141da0a10073116517a2142b6</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:12</sys_updated_on>
+    </sys_ux_data_broker_transform>
+</record_update>

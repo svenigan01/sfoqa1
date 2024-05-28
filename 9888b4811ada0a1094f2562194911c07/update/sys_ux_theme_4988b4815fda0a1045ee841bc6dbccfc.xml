@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Theme for the Team Contacts template</description>
+        <name>Team Contacts Theme</name>
+        <parent display_value="Default">a309795273230010fd843c78caf6a724</parent>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>4988b4815fda0a1045ee841bc6dbccfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contacts Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_theme_4988b4815fda0a1045ee841bc6dbccfc</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:06</sys_updated_on>
+        <theme>{&#13;
+  "navigation--font-weight": "600",&#13;
+  "catalog--variable-gap": "1.5rem",&#13;
+  "button--width-scale": "1.25",&#13;
+&#13;
+  "--now-color--primary-0": "217,235,249",&#13;
+  "--now-color--primary-1": "3,120,214",&#13;
+  "--now-color--primary-2": "3,90,161",&#13;
+  "--now-color--primary-3": "2,60,107",&#13;
+  "--now-color--secondary-0": "217,235,249",&#13;
+  "--now-color--secondary-1": "3,120,214",&#13;
+  "--now-color--secondary-2": "3,90,161",&#13;
+  "--now-color--secondary-3": "2,60,107",&#13;
+  "--now-color--link-primary-1":"41,62,64",&#13;
+    &#13;
+  "color--background-primary": "255,255,255",&#13;
+  "color--background-secondary": "246,247,247",&#13;
+  "color--background-tertiary": "228,230,231",&#13;
+  "color--divider-primary": "135,147,148",&#13;
+  "color--divider-secondary": "172,180,181",&#13;
+  "color--divider-tertiary": "209,214,214",&#13;
+  "color--text-primary": "22,27,28",&#13;
+  "color--text-secondary": "66,80,81",&#13;
+  "color--text-tertiary": "99,114,116",&#13;
+  "--now-tabs--selected--background-color": "1,119,142",&#13;
+  "canvas-header-container--background-color": "41, 62, 64",&#13;
+  "canvas-nav-item--simple-nav--color": "var(--now-color--neutral-4)",&#13;
+  "canvas-nav-item--simple-nav--color--hover": "var(--now-color--neutral-4)",&#13;
+  "canvas-nav-item--simple-nav--color--active": "var(--now-color--neutral-4)",&#13;
+  "canvas-nav-item--simple-nav--background-color--hover": "var(--now-color--primary-1)",&#13;
+  "--now-canvas-header-container--short--border-width": "0",&#13;
+  "contact-btn-color": "3,120,214",&#13;
+  "contact-btn-text-color": "255,255,255",&#13;
+    &#13;
+   &#13;
+  "--now-font-family": "Roboto",&#13;
+  "--now-heading--header-primary--font-family": "Cabin",	&#13;
+  "--now-heading--header-primary--font-weight": "600",&#13;
+  "--now-heading--header-secondary--font-family": "Cabin",&#13;
+  "--now-heading--header-secondary--font-weight": "600",&#13;
+  "--now-heading--header-tertiary--font-family": "Cabin",	&#13;
+  "--now-heading--header-tertiary--font-weight": "600",&#13;
+    &#13;
+    &#13;
+  "--now-button--width-scale": "1.25",&#13;
+  "--now-button--height-scale": "1.25",&#13;
+  "--now-button--primary--color": "var(--now-contact-btn-text-color)",&#13;
+  "--now-button--primary--color--hover": "var(--now-contact-btn-text-color)",&#13;
+    &#13;
+  "--now-button--primary--background-color": "var(--now-contact-btn-color)",&#13;
+  "--now-button--primary--background-color--hover": "3,108,214",&#13;
+  "--now-button--primary--background-color--active": "var(--now-contact-btn-color)",&#13;
+  &#13;
+  "--now-button--primary--border-color": "var(--now-contact-btn-color)",&#13;
+ &#13;
+  "--now-button--primary--border-color--hover": "var(--now-contact-btn-color)",&#13;
+  "--now-button--secondary--border-color--hover": "var(--now-contact-btn-color)",&#13;
+  "--now-button--tertiary--border-color--hover": "var(--now-contact-btn-color)",&#13;
+   &#13;
+  "--now-button--primary--border-color--active": "var(--now-contact-btn-color)",&#13;
+  "--now-button--secondary--border-color--active": "var(--now-contact-btn-color)",&#13;
+  "--now-button--tertiary--border-color--active": "var(--now-contact-btn-color)",&#13;
+    &#13;
+  "--now-button--primary--border-color--selected": "var(--now-contact-btn-color)",&#13;
+  "--now-button--secondary--border-color--selected": "var(--now-contact-btn-color)",&#13;
+  "--now-button--tertiary--border-color--selected": "var(--now-contact-btn-color)",&#13;
+  "--now-button--bare_primary--background-color--hover": "3,120,214",&#13;
+    &#13;
+  "--now-button--border-radius": "5px",&#13;
+  "--now-button--secondary--background-color": "255,255,255",&#13;
+  "--now-tabs--background-color--active": "255,255,255",&#13;
+  "--now-tabs--background-color--disabled": "255,255,255",&#13;
+  "--now-tabs--border-color--active": "3,120,214",&#13;
+  "--now-tabs--border-color--hover": "3,120,214",&#13;
+  "--now-tabs--border-color--selected": "255,255,255",&#13;
+  "tabs--background-color": "255,255,255",&#13;
+  "--now-button--bare_primary--color": "3,120,214",&#13;
+  "--now-text-link--primary--color": "3,120,214",&#13;
+  "card--border-radius": "3px",&#13;
+  "$now-card--border-radius": "var(p(--now-card--border-radius), $now-container--border-radius)",&#13;
+  "card--border-color": "209,214,214",&#13;
+  "$now-card--border-color": "var(p(--now-card--border-color), $now-color_border--tertiary)",&#13;
+    &#13;
+  "--now-text-link--secondary--color":"var(--now-color--link-primary-1)",&#13;
+  "--now-button--bare_primary--color--hover":"var(--now-color--primary-1)",&#13;
+  "--now-button--secondary--color--hover": "0,0,0",&#13;
+  "--now-button--secondary--background-color--hover": "255,255,255",&#13;
+  "--now-color_focus-ring":"var(--now-contact-btn-color)"&#13;
+}</theme>
+    </sys_ux_theme>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_panel>4988f48149da0a108c2b379ddaed7f01</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes>{"login":"login", "logout": "login", "custom404":"custom404"}</auth_routes>
+        <page/>
+        <parent_app/>
+        <path>x_safia_contacts</path>
+        <root_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0d88f481f5da0a10e64211e0888f1501</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>contacts</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_page_registry_0d88f481f5da0a10e64211e0888f1501</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:28</sys_updated_on>
+        <title>contacts</title>
+    </sys_ux_page_registry>
+</record_update>

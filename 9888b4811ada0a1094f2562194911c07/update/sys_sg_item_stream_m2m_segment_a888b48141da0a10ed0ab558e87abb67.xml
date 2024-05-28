@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
+    <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
+        <item_stream display_value="List of notes Item Stream">2088b4814fda0a105104f1698c8f2a6e</item_stream>
+        <segment display_value="Item Stream Segment">e088b48128da0a10f81bc504b3467b68</segment>
+        <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a888b48141da0a10ed0ab558e87abb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_segment_a888b48141da0a10ed0ab558e87abb67</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:18</sys_updated_on>
+    </sys_sg_item_stream_m2m_segment>
+</record_update>

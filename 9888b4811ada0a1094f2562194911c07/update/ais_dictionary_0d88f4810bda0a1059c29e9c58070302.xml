@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auto_refresh>720</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source>sys_user</data_source>
+        <derived>true</derived>
+        <field/>
+        <label>Team Contact Default Search Profile Default Spell Check Dictionary</label>
+        <last_derived>2024-05-28 15:26:57</last_derived>
+        <locale>en</locale>
+        <name>x_safia_contacts_team_contact_default_search_profile_default_spell_check_dictionary</name>
+        <publish_id>a817b459-5f43-4943-8ac0-c573d765519f</publish_id>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0d88f4810bda0a1059c29e9c58070302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_safia_contacts_team_contact_default_search_profile_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>ais_dictionary_0d88f4810bda0a1059c29e9c58070302</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:19</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+</record_update>

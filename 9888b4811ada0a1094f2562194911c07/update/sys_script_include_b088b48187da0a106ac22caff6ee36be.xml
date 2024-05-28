@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_safia_contacts.DateTimeUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>DateTimeUtils</name>
+        <script><![CDATA[var DateTimeUtils = Class.create();
+DateTimeUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    userDateformat: function(date, userID) {
+        var dateFormat = '';
+        userID = userID || gs.getUserID();
+        var userObj = new GlideRecord('sys_user');
+        if (userObj.get(userID)) {
+            dateFormat = userObj.getValue('date_format');
+        }
+        if (date) {
+            var gdt = new GlideDateTime(date);
+            var gd = new GlideDate();
+            gd.setValue(gdt);
+            return gd.getByFormat(dateFormat);
+        }
+    },
+	checkPastDate: function(dateToCheck){
+		var dateRequired = this.getParameter('sysparm_required') || dateToCheck;
+		var currentDate = new GlideDateTime();
+		currentDate.setValue(currentDate.getDate()+" 00:00:00");
+		var dateReq = new GlideDateTime();
+		dateReq.setDisplayValue(dateRequired);
+		dateReq.setValue(dateReq.getDate()+" 00:00:00");
+		var diff =  Math.floor(GlideDateTime.subtract(currentDate, dateReq).getNumericValue()/1000);
+		if( diff <= 0){
+			return "false";
+		}else{
+			return "true";
+		}
+	},
+    type: 'DateTimeUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b088b48187da0a106ac22caff6ee36be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DateTimeUtils</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_script_include_b088b48187da0a106ac22caff6ee36be</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
+    <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
+        <item_stream display_value="All Employees Item Stream">e088b48100da0a10a2b50cf1ec640b6e</item_stream>
+        <master_item display_value="All Employees Main Item">2488b4811ada0a101191ea098d2d9773</master_item>
+        <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:29:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a488b48122da0a1031346f46d6f9806b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_master_item_a488b48122da0a1031346f46d6f9806b</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:29:52</sys_updated_on>
+    </sys_sg_item_stream_m2m_master_item>
+</record_update>

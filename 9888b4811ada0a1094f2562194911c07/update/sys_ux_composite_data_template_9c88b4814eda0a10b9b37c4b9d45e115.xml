@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template">
+    <sys_ux_composite_data_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>team-contact-saved</name>
+        <sys_class_name>sys_ux_composite_data_template</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:29:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9c88b4814eda0a10b9b37c4b9d45e115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>team-contact-saved</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_9c88b4814eda0a10b9b37c4b9d45e115</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:29:55</sys_updated_on>
+        <template>{&#13;
+	"component": "now-card-evam-record",&#13;
+	"staticValues": {&#13;
+		 "highlightedHeaderIcon": {&#13;
+			"translatable": false,&#13;
+			"key": "star-outline"&#13;
+		},&#13;
+		"highlightedHeaderBkgColor": {&#13;
+			"translatable": false,&#13;
+			"key": "moderate"&#13;
+		},&#13;
+        "highlightedHeaderLabel": {&#13;
+            "translatable": false,&#13;
+			"key": "Saved"&#13;
+        },&#13;
+		"imageType": {&#13;
+			"translatable": false,&#13;
+			"key": "avatar"&#13;
+		},&#13;
+		"detailLabelOne": {&#13;
+			"translatable": true,&#13;
+			"key": "Email address"&#13;
+		},&#13;
+		"detailLabelTwo": {&#13;
+			"translatable": true,&#13;
+			"key": "Phone"&#13;
+		}&#13;
+	},&#13;
+	"mappings": {&#13;
+		"highlightedHeaderLabel": "",&#13;
+		"titleLabel": "contact_name.name",&#13;
+		"avatarURL": "contact_name.photo",&#13;
+		"subtitle": "contact_name.title",&#13;
+        "subtitleAvatarURL": "",&#13;
+		"detailValueOne": "contact_name.email",&#13;
+		"detailValueTwo": "contact_name.phone"&#13;
+	},&#13;
+	"actionMappings": {&#13;
+		"mainActions": ["activate_user", "call_number"],&#13;
+		"clickAction": "navigation"&#13;
+	}&#13;
+}</template>
+    </sys_ux_composite_data_template>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="v_search_genius_result">model=7888b4811eda0a10068cd01c0a85d3bd^EQ<item display_table="sys_search_genius_result_model" display_value="Team Contact  Genius Result" endquery="false" field="model" goto="false" newquery="false" operator="=" or="false" value="7888b4811eda0a10068cd01c0a85d3bd"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.title,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.department,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.ai_search_teaser_title,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.mobile_phone,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.avatar,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.name,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.location,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.sys_id,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.ai_search_teaser_text,model,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.email,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.table,columns.var__m_sys_search_genius_result_field_7888b4811eda0a10068cd01c0a85d3bd.ai_search_parent_title</field_list>
+        <name>Team Contact Genius Result</name>
+        <order>10</order>
+        <predicate_bundle display_value="Team Contact Search Bundle">d088b48189da0a1044d28e2e128bb417</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:29:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1488b48127da0a104be855c65d8a2313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contact Genius Result</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_1488b48127da0a104be855c65d8a2313</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:29:59</sys_updated_on>
+        <table>v_search_genius_result</table>
+        <ux_template display_value="Team Contact Genius Result">d888b48153da0a10d61eb08e07ac5115</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

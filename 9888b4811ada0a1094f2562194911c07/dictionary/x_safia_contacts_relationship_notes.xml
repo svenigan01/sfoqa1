@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dd88f4811bda0a108abf0d076e4bcb07" label="Note" max_length="40" name="x_safia_contacts_relationship_notes" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" display="true" label="Contact" mandatory="true" max_length="32" name="contact" reference="x_safia_contacts_relationship_contact" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date" mandatory="true" max_length="40" name="contact_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Where did you meet? (max 80 characters)" max_length="80" name="contact_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" mandatory="true" max_length="8000" name="note" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reason for contact (optional)" max_length="40" name="relationship" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Meeting" sequence="0" value="meeting"/>
+                <element inactive_on_update="false" label="Conference" sequence="10" value="conference"/>
+                <element inactive_on_update="false" label="Teammate" sequence="20" value="teammate"/>
+                <element inactive_on_update="false" label="Casual" sequence="30" value="casual"/>
+                <element inactive_on_update="false" label="Executive" sequence="40" value="executive"/>
+                <element inactive_on_update="false" label="Customer" sequence="50" value="customer"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="contact"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="Team Contact Default Search Profile">0588f481f8da0a10a2afc3fa2336e801</profile>
+        <search_source display_value="People">f7bb8241c7231010d558c943c7c26010</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4988b48164da0a1047c3403fe49894ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_4988b48164da0a1047c3403fe49894ff</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:01</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

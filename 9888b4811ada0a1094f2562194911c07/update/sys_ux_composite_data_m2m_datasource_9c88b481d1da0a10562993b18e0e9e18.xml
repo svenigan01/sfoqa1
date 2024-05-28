@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Team Contact Search">5488b481abda0a107750ae99d41b041b</dataset>
+        <datasource display_value="Genius Result Data Source">6d7939f1ffe31010968af5a1703bf153</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9c88b481d1da0a10562993b18e0e9e18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_9c88b481d1da0a10562993b18e0e9e18</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:04</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

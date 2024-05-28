@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_safia_contacts_team_contact_url</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript( /* GlideRecord */ current, /* TemplatePrinter */ template,
+    /* Optional EmailOutbound */
+    email, /* Optional GlideRecord */ email_action,
+    /* Optional GlideRecord */
+    event) {
+    var companyCode = gs.getProperty("glide.appcreator.company.code");
+    var instance_url = gs.getProperty('glide.servlet.uri');
+   
+    var link = "<a class='btn btn-primary' href='" + instance_url + "x/safia/x_safia_contacts/profile-landing/" + current.contact.contact_name;
+    link = link + "' target='_team_contact'>VIEW CONTACT</a>";
+    template.print(link);
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fc88b48199da0a1008088b9e99299bbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_safia_contacts_team_contact_url</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_script_email_fc88b48199da0a1008088b9e99299bbd</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:22</sys_updated_on>
+    </sys_script_email>
+</record_update>

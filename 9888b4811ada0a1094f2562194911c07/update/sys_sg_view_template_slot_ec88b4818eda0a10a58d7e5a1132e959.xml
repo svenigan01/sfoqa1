@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template_slot">
+    <sys_sg_view_template_slot action="INSERT_OR_UPDATE">
+        <name>cb2f15f0-2377-3627-016e-8bf818f1507a</name>
+        <sys_class_name>sys_sg_view_template_slot</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ec88b4818eda0a10a58d7e5a1132e959</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cb2f15f0-2377-3627-016e-8bf818f1507a</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_view_template_slot_ec88b4818eda0a10a58d7e5a1132e959</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:20</sys_updated_on>
+        <type>text</type>
+        <view_template display_value="Contact Header">e488b481c0da0a10e89c8a21bedeb15b</view_template>
+    </sys_sg_view_template_slot>
+</record_update>

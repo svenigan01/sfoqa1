@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sys_user">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>name,email,avatar,title,department,location,mobile_phone,location.city,phone</field_list>
+        <name>Team Contact Search Config</name>
+        <order>100</order>
+        <predicate_bundle display_value="Team Contact Search Bundle">d088b48189da0a1044d28e2e128bb417</predicate_bundle>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5888b481b9da0a109bb6c84088ee6214</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team Contact Search Config</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_5888b481b9da0a109bb6c84088ee6214</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:08</sys_updated_on>
+        <table>sys_user</table>
+        <ux_template display_value="Team Contact Search">5088b48167da0a1023b5c4c6ff767d16</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

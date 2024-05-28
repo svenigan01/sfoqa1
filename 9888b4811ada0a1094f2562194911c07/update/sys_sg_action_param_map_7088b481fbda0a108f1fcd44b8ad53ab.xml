@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Add Note">3888b48129da0a10cd59b9c01c04aab0</button>
+        <item_parameter display_value="Note">7488b4813fda0a10b18d4bac4bdf10aa</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7088b481fbda0a108f1fcd44b8ad53ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7488b4813fda0a10b18d4bac4bdf10aa</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_7088b481fbda0a108f1fcd44b8ad53ab</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:07</sys_updated_on>
+        <ui_parameter display_value="Note">7c88b4817ada0a1087f2ce8b78058cab</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

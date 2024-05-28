@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="note_date" label="Date to remind me" language="en" table="x_safia_contacts_relationship_contact_reminders">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>note_date</element>
+            <help/>
+            <hint/>
+            <label>Date to remind me</label>
+            <language>en</language>
+            <name>x_safia_contacts_relationship_contact_reminders</name>
+            <plural>Date to remind mes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Date to remind me</sys_name>
+            <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+            <sys_update_name>sys_documentation_x_safia_contacts_relationship_contact_reminders_note_date_en</sys_update_name>
+            <sys_updated_by>SVenigandla</sys_updated_by>
+            <sys_updated_on>2024-05-19 07:30:03</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

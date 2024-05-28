@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Profile landing">a488b48103da0a109d2e6bacd2304b29</macroponent>
+        <name>Event Handler</name>
+        <preset/>
+        <required_translations>[ {
+  "code" : null,
+  "message" : "Your relationship reminder has been saved.",
+  "comment" : ""
+}, {
+  "code" : null,
+  "message" : "You can find this contact quickly in your saved list.",
+  "comment" : ""
+}, {
+  "code" : null,
+  "message" : "Your relationship note has been saved.",
+  "comment" : ""
+} ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+ 
+    const {
+        setState,
+        state,
+        emit,
+        context
+    } = api;
+
+    var items = [];
+
+    //Build teamates Object
+    const buildTeammatesObj = function(results) {
+        var payloadObj = [];
+        var payload = {};
+        results.forEach(r => {
+
+            payload.title = {
+                "label": r.name.displayValue,
+                "variant": "secondary",
+                "href": "/x/safia/x_safia_contacts/profile-landing/" + r._row_data.uniqueValue,
+                "opensWindow": "false"
+            };
+
+            payload.fields = [];
+            if (r.email.displayValue)
+                payload.fields.push({
+                    "text": r.email.displayValue,
+                    "type": "string",
+                    "tooltip": "email"
+                });
+
+            if (r.title.displayValue)
+                payload.fields.push({
+                    "text": r.title.displayValue,
+                    "type": "string",
+                    "tooltip": "Job title"
+                });
+
+            payloadObj.push(payload);
+            payload = {};
+
+        });
+
+        //payloadObj = [{"title":{"label":"Shola Park","variant":"secondary","href":"https://google.com","opensWindow":"true"},"icon":"document-outline","fields":[{"text":"Network Administrator","type":"string","tooltip":"Job title"}]}];
+        return payloadObj;
+    };
+
+    //Event Handler
+    if (event.elementId == "create_relationship_contact" || event.elementId == "update_relationship_contact") {
+        if (event.name == "DATA_OP_SUCCEEDED") {
+
+            //Set state
+            if (event.elementId == "create_relationship_contact")
+                setState('relationshipRecord', event.payload.data.output.data.GlideRecord_Mutation.insert_x_safia_contacts_relationship_contact.sys_id.value);
+
+            //Show alert
+            if (state.isFavorite) {
+                helpers.translate('You can find this contact quickly in your saved list.').then((value) => {
+                    api.emit("NOW_UXF_PAGE#ADD_NOTIFICATIONS", {
+                        items: [{
+                            id: 'save_contact',
+                            status: "positive",
+                            icon: "bell-outline",
+                            header: "Contact saved",
+                            content: value,
+                            action: {
+                                type: "dismiss"
+                            }
+                        }]
+                    });
+                });
+            }
+
+
+        }
+    } else if (event.elementId == "get_team_mates") {
+
+        //Build teammates obj state
+        if (event.name == "DATA_FETCH_SUCCEEDED") {
+            setState('teamMatesObj', buildTeammatesObj(api.data.get_team_mates.results));
+        }
+
+    }  else if (event.elementId == "create_note_reminder") {
+         if ('closed' == event.payload.status) {
+             //Set state
+            setState('showForm', false);
+            setState('record', 0);
+
+            //Refresh the data broker
+            api.data.get_notes_reminders.refresh();
+         }
+
+        //If inserted
+        if ('inserted' == event.payload.status || 'updated' == event.payload.status) {
+
+            if ('x_safia_contacts_relationship_notes' == state.recordTable) {
+                //Alert
+                helpers.translate("Your relationship note has been saved.").then((value) => {
+                    api.emit("NOW_UXF_PAGE#ADD_NOTIFICATIONS", {
+                        items: [{
+                            id: 'add_note',
+                            status: "positive",
+                            icon: "bell-outline",
+                            header: "Note saved",
+                            content: value,
+                            action: {
+                                type: "dismiss"
+                            }
+                        }]
+                    });
+                });
+            } else if ('x_safia_contacts_relationship_contact_reminders' == state.recordTable) {
+                //Alert
+                helpers.translate("Your relationship reminder has been saved.").then((value) => {
+                    api.emit("NOW_UXF_PAGE#ADD_NOTIFICATIONS", {
+                        items: [{
+                            id: 'add_note',
+                            status: "positive",
+                            icon: "bell-outline",
+                            header: "Reminder saved",
+                            content: value,
+                            action: {
+                                type: "dismiss"
+                            }
+                        }]
+                    });
+                });
+            }
+
+            //Set state
+            setState('showForm', false);
+            setState('record', 0);
+
+            //Refresh the data broker
+            api.data.get_notes_reminders.refresh();
+
+        } else {
+            api.data.create_note_reminder.setValue({
+                fieldName: 'contact',
+                value: state.relationshipRecord
+            });
+        }
+
+    } else if (event.name == "RECORD_CARD_CLICK") {
+
+        setState('recordTable', event.payload.table);
+        setState('record', event.payload.sysId);
+        setState('showForm', true);
+
+    } else if (event.elementId == 'new_reminder' || event.elementId == 'new_note') {
+
+        const {
+            snHttp
+        } = helpers;
+
+        //If no relationship record, create one
+        if (!state.relationshipRecord) {
+            snHttp('/api/now/table/x_safia_contacts_relationship_contact', {
+                method: "POST",
+                body: [{
+                    "name": context.session.user.sys_id,
+                    "contact_name": context.props.sysId
+                }],
+                batch: false,
+            }).then(response => {
+                if (response.response.result.sys_id) {
+                    //Update state
+                    setState('relationshipRecord', response.response.result.sys_id); //Set the relationship record to state
+
+                    api.data.create_note_reminder.setValue({
+                        fieldName: 'contact',
+                        value: response.response.result.sys_id
+                    });
+
+                }
+            }).catch(error => {
+                console.log('Error' + error);
+            });
+        }
+    }
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2c88b4812bda0a108fac7431b89b8e1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Handler</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_ux_client_script_2c88b4812bda0a108fac7431b89b8e1d</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:25</sys_updated_on>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

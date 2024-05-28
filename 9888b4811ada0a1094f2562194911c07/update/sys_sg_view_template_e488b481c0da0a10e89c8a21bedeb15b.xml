@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Contact Header</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>SVenigandla</sys_created_by>
+        <sys_created_on>2024-05-19 07:30:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e488b481c0da0a10e89c8a21bedeb15b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contact Header</sys_name>
+        <sys_package display_value="contacts" source="x_safia_contacts">9888b4811ada0a1094f2562194911c07</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="contacts">9888b4811ada0a1094f2562194911c07</sys_scope>
+        <sys_update_name>sys_sg_view_template_e488b481c0da0a10e89c8a21bedeb15b</sys_update_name>
+        <sys_updated_by>SVenigandla</sys_updated_by>
+        <sys_updated_on>2024-05-19 07:30:28</sys_updated_on>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":15,"Bottom":17},"Orientation":"Vertical","Alignment":"Center","Distribution":"Auto","Id":"Root","BackgroundColor":"#293E40","Children":[{"Type":"Image","Scaling":"fit","Width":80,"Height":80,"CornerRadius":40,"CellId":"c7263e8a-8010-1754-3f3e-8c6d3332b389","Margin":{"Bottom":8}},{"Type":"Text","TextColor":"#FFFFFF","Font":{"Weight":"bold","Size":20},"MaxLines":2,"textStyle":"custom","TextAlignment":"Center","CellId":"aeaf22c3-1a14-c211-2852-da380074dd63","Margin":{"Bottom":6}},{"Type":"Text","TextColor":"#FFFFFF","Font":{"Weight":"regular","Size":15},"MaxLines":1,"textStyle":"custom","TextAlignment":"Center","CellId":"cb2f15f0-2377-3627-016e-8bf818f1507a","Margin":{"Bottom":6}},{"Type":"Text","TextColor":"#FFFFFF","Font":{"Weight":"regular","Size":13},"MaxLines":1,"textStyle":"custom","TextAlignment":"Center","CellId":"b9221459-d5c4-004d-0d11-182a48ff948c"}]}</template_json>
+    </sys_sg_view_template>
+</record_update>
